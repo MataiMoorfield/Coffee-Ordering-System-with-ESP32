@@ -16,6 +16,7 @@ void setup() {
   }
 
   Serial.println("Connected to WiFi");
+  Serial.println(WiFi.localIP());
 
   server.on("/", HTTP_GET, [](AsyncWebServerRequest* request) {
     // HTML form with improved styling
