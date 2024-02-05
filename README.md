@@ -2,7 +2,8 @@
 A simple web based coffee ordering system with the ESP32 for cafés.
 
 How to run:
-Git clone the folder:
+
+Clone the folder:
 ```
 git clone https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32.git
 ```
