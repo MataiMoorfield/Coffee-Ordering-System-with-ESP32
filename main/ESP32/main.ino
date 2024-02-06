@@ -19,7 +19,7 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   server.on("/", HTTP_GET, [](AsyncWebServerRequest* request) {
-    // HTML form with improved styling
+    // HTML
     String htmlContent = "<html><head><style>";
     htmlContent += "body {font-family: Arial, sans-serif; margin: 20px;}";
     htmlContent += "form {max-width: 400px; margin: auto;}";
@@ -104,13 +104,12 @@ void setup() {
     String milk = request->arg("milk");
     String notes = request->arg("notes");
 
-    // Check for required fields and valid coffee type
+   
     if (name.isEmpty() || size.isEmpty() || milk.isEmpty() || sugar.isEmpty() || coffeeType.isEmpty() || coffeeType == "Please select") {
-      // Display an error message if any required field is empty or coffee type is not selected
       String errorMessage = "<html><body><h2>Error: Please fill in all required fields and select a valid coffee type.</h2></body></html>";
       request->send(400, "text/html", errorMessage);
     } else {
-      // HTML content for the order submission page with consistent styling
+      // Submit page HTML
       String submitPageContent = "<html><head><style>";
       submitPageContent += "body {font-family: Arial, sans-serif; margin: 20px;}";
       submitPageContent += "h2 {color: #4CAF50;}";
@@ -127,7 +126,7 @@ void setup() {
       submitPageContent += "<p><strong>Notes:</strong> " + notes + "</p>";
       submitPageContent += "</body></html>";
 
-      // Send data via Serial to the computer
+      // Serial
       Serial.print("Coffee Order - Name: ");
       Serial.print(name);
       Serial.print(", Coffee Type: ");
