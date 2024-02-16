@@ -5,7 +5,7 @@ A simple web based coffee ordering system with the ESP32 for cafés. Full video 
 > This is a system I'm currently developing for cafés to handle orders, both food and drinks.
 
 > [!IMPORTANT]
-> This is a in-porgress porject. It's not fully completed and will be updated.
+> This is a in-progress porject. It's not fully completed and will be updated.
 
 ## How to run
 
