@@ -22,7 +22,13 @@ Update the WiFi information for your network in the `main.ino` code. Upload the 
 > [!TIP]
 > Don't run the Python script with tthe Arduino IDE open
 
-Run the `run.py` script while the ESP32 is plugged in.
+**If you own a Mac, run the ```mac.py```. This allows the Python to talk as the orders come in** 😀
+```
+cd main/Python
+python mac.py
+```
+
+If you don't, run the `run.py` script while the ESP32 is plugged in.
 ```
 cd main/Python
 python run.py
