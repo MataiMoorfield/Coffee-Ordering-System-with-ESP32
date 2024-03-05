@@ -1,2 +1,1 @@
-tkinter
-pyserial
+pyserial==3.5
