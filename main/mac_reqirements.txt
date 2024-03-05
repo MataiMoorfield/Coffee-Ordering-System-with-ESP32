@@ -1,4 +1,0 @@
-tkinter
-serial
-threading
-os
