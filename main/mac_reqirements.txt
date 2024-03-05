@@ -1,0 +1,4 @@
+tkinter
+serial
+threading
+os
