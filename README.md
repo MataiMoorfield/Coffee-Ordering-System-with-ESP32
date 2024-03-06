@@ -19,7 +19,7 @@ pip install -r requirements.txt
 Update the WiFi information for your network in the ```main.ino``` code. Upload the code to the ESP32. View the serial monitor to make sure it's connected to WiFi and view the local IP of the ESP32. For example, 
 ```
 const char* ssid = "RouterName";
-const char* password = "wifi1234567";
+const char* password = "wifi_password";
 ```
 # Running the Python script
 > [!IMPORTANT]
