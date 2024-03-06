@@ -56,3 +56,6 @@ Below: The web coffee ordering system
 <div style="text-align: right">
   <img src="https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32/assets/138086469/063af052-8572-46fd-9aae-6a818656e237" alt="Alt text">
 </div>
+
+# Extras
+If you are having diffuculties, please email [matai@moorfield.co.nz](mailto:matai@moorfield.co.nz) and I'll be more than happy to help you out.
