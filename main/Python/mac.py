@@ -4,7 +4,7 @@ import threading
 import os
 
 def read_serial():
-    ser = serial.Serial('/dev/cu.usbserial-0001', 115200)  # Replace with ESP32 port
+    ser = serial.Serial('/dev/cu.usbserial-0001', 115200)  # Replace with ESP32 serial port
     while True:
         line = ser.readline().decode('utf-8').strip()
         if line:
@@ -18,9 +18,10 @@ def complete_order():
     selected_index = orders_listbox.curselection()
     if selected_index:
         orders_listbox.delete(selected_index)
-       
+
+# Speech       
 def speak(text):
-    os.system(f'say "New {text}"')
+    os.system(f'say "New {text}"') # The serial text starts with "Coffee order..." so the "new" makes it say "New coffee order..."
 
 root = tk.Tk()
 root.title("Coffee Orders")
