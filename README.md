@@ -38,10 +38,12 @@ python run.py
 ```
 
 # Wiring and code:
-**Physcial**
+**Physcial:**
+
 C++ code on ESP32 → USB → Computer → Python → GUI
 
 **System:**
+
 ESP32 hosts HTML → User sumbits form → Serial via USB → Python → GUI and speech (on ```mac.py```)
 
 # How to order:
