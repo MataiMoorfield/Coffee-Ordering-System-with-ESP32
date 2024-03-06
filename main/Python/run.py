@@ -3,7 +3,7 @@ import serial
 import threading
 
 def read_serial():
-    ser = serial.Serial('/dev/cu.usbserial-0001', 115200)  # Replace with ESP32 port
+    ser = serial.Serial('/dev/cu.usbserial-0001', 115200)  # Replace with ESP32 serial port
     while True:
         line = ser.readline().decode('utf-8').strip()
         if line:
@@ -22,8 +22,7 @@ def complete_order():
 root = tk.Tk()
 root.title("Coffee Orders")
 
-# Make the Listbox resizable
-orders_listbox = tk.Listbox(root, width=40)  # Set the initial width
+orders_listbox = tk.Listbox(root, width=40)  
 orders_listbox.pack(pady=10, expand=True, fill=tk.BOTH)
 
 complete_button = tk.Button(root, text="Complete Order", command=complete_order)
