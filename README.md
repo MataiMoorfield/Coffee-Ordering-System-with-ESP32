@@ -1,17 +1,14 @@
 # Coffee-Ordering-System-with-ESP32
-A simple web based coffee ordering system with the ESP32 for cafés. Full video [here](https://www.youtube.com/watch?v=jhMNulLlHCo).
+A simple web based coffee ordering system with the ESP32 for cafés. Full video [here](https://www.youtube.com/watch?v=jhMNulLlHCo). 
 
-The normal Python (```run.py```) allows the barista to oview orders. The Mac (```mac.py```) - for Macbooks, allows the Python to talk the orders as they come in.
+The ESP32 hosts a basic user interface which a customer can fill out a form. The form data is sent via serial to a laptop running a Python script. The normal Python (```run.py```) allows the barista to oview orders. The Mac (```mac.py```) - for Macbooks, allows the Python to talk the orders as they come in. Please note, ```mac.py``` runs on MacOS and might possibly run on other operating systems, however it's uncertain.
 
 > [!NOTE]
-> This is a system I'm currently developing for cafés to handle orders, both food and drinks.
+> Please note, ```mac.py``` runs on MacOS and might possibly run on other operating systems, however it's uncertain.
 
-> [!IMPORTANT]
-> This is a in-progress porject. It's not fully completed and will be updated.
+# Setup
 
-# How to run
-
-Clone the folder:
+Clone the folder using Git Clone: (or download it as a ZIP)
 ```
 git clone https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32.git
 ```
@@ -19,12 +16,16 @@ Install the necessary libraries:
 ```
 pip install -r requirements.txt
 ```
-Update the WiFi information for your network in the `main.ino` code. Upload the code to the ESP32. View the serial monitor to make sure it's connected to WiFi and view the local IP of the ESP32.
+Update the WiFi information for your network in the ```main.ino``` code. Upload the code to the ESP32. View the serial monitor to make sure it's connected to WiFi and view the local IP of the ESP32. For example, 
+```
+const char* ssid = "RouterName";
+const char* password = "wifi1234567";
+```
+# Running the Python script
+> [!IMPORTANT]
+> Don't run the Python script with the Arduino IDE open. The Python will ot be able to use the serial port as the Arduino IDE is using it. Close the serial monitor or quit Arduino IDE. Infomation about running the Python scrip is below.
 
-> [!TIP]
-> Don't run the Python script with tthe Arduino IDE open
-
-**If you own a Mac, run the ```mac.py```. This allows the Python to talk as the orders come in** 😀
+If you own a Mac, run the ```mac.py```. This allows the Python to talk as the orders come in
 ```
 cd main/Python
 python mac.py
@@ -38,10 +39,10 @@ python run.py
 
 # Wiring and code:
 **Physcial**
-C++ code on ESP32 --> USB --> Computer --> Python --> GUI
+C++ code on ESP32 → USB → Computer → Python → GUI
 
 **System:**
-ESP32 hosts HTML --> User sumbits form --> Serial via USB --> Python --> GUI and speech (on ```mac.py```)
+ESP32 hosts HTML → User sumbits form → Serial via USB → Python → GUI and speech (on ```mac.py```)
 
 # How to order:
 Enter the IP of the ESP32 in a web browser. A simple ordering form opens. When the form is completed and submitted, the order will appear on the Python GUI. When selected, the order can be completed and disappears.
