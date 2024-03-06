@@ -1,7 +1,7 @@
 # Coffee-Ordering-System-with-ESP32
 A simple web based coffee ordering system with the ESP32 for cafés. Full video [here](https://www.youtube.com/watch?v=jhMNulLlHCo). 
 
-The ESP32 hosts a basic user interface which a customer can fill out a form. The form data is sent via serial to a laptop running a Python script. The normal Python (```run.py```) allows the barista to oview orders. The Mac (```mac.py```) - for Macbooks, allows the Python to talk the orders as they come in. Please note, ```mac.py``` runs on MacOS and might possibly run on other operating systems, however it's uncertain.
+The ESP32 hosts a basic user interface which a customer can fill out a form. The form data is sent via serial to a laptop running a Python script. The normal Python script (```run.py```) allows the barista to overview orders. The Mac script (```mac.py```) - for Macbooks, allows the Python to talk the orders as they come in. 
 
 > [!NOTE]
 > Please note, ```mac.py``` runs on MacOS and might possibly run on other operating systems, however it's uncertain.
