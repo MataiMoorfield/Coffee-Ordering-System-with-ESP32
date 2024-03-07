@@ -20,13 +20,13 @@ pip install -r requirements.txt
 ```
 **Note:** If you are using macOS, use ```pip3```.
 
-Update the WiFi information for your network in the ```main.ino``` code. Upload the code to the ESP32. 
+Update the WiFi information for your network in the ```main.ino``` code.
 ```
 const char* ssid = "RouterName";
 const char* password = "wifi_password";
 ```
 
-View the serial monitor to make sure it's connected to WiFi. It will give the local IP of the ESP32. For example:
+Upload the code to the ESP32. View the serial monitor to make sure it's connected to WiFi. It will give the local IP of the ESP32. For example:
 ```
 Connecting to WiFi...
 Connected to WiFi
