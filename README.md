@@ -76,3 +76,10 @@ serial.serialutil.SerialException: [Errno 16] could not open port /dev/cu.usbser
 This bug comes from having Arudino IDE or another prgram using the ESP32. Close whatever program is doing this.
 
 If you are having diffuculties, please email [matai@moorfield.co.nz](mailto:matai@moorfield.co.nz) and I'll be more than happy to help you out.
+
+# Future updates
+ - HTML user interface for handling orders and better interface for forms
+ - QR code generator for ordering form
+ - Making worldwide instead of local host 
+ - Removing ESP32 and creating a server on a laptop
+ - Barista menu for either the QR code, order form, and order handling 
