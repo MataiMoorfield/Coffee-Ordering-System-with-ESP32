@@ -11,11 +11,14 @@ The ESP32 hosts a basic user interface which a customer can fill out a form. The
 Clone the folder using Git Clone: (or download it as a ZIP)
 ```
 git clone https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32.git
+cd Coffee-Ordering-System-with-ESP32/main
 ```
 Install the necessary libraries:
 ```
 pip install -r requirements.txt
 ```
+**Note:** If you are using macOS, use ```pip3```.
+
 Update the WiFi information for your network in the ```main.ino``` code. Upload the code to the ESP32. View the serial monitor to make sure it's connected to WiFi and view the local IP of the ESP32. For example, 
 ```
 const char* ssid = "RouterName";
@@ -25,15 +28,17 @@ const char* password = "wifi_password";
 > [!IMPORTANT]
 > Don't run the Python script with the Arduino IDE open. The Python will ot be able to use the serial port as the Arduino IDE is using it. Close the serial monitor or quit Arduino IDE. Infomation about running the Python scrip is below.
 
-If you own a Mac, run the ```mac.py```. This allows the Python to talk as the orders come in
+If you are using macOS, use ```python3```. If you are also using a Macbook/Apple computer, run the ```mac.py```. This allows the Python to talk as the orders come in. Before running the Python script, double check the ESP32 port is correctr (this can change from operating system). Use the Mac command ```ls /dev/cu.*```, Windows command ```wmic path Win32_PnPEntity where "Caption like '%(COM%'" get Caption,DeviceID```, or Linux command ```ls /dev/tty*```. It should look like ```/dev/cu.usbserial-0001```, ```COM3```, or ```/dev/ttyUSBx```.
+
+How to run Mac python script:
 ```
-cd main/Python
+cd Python
 python mac.py
 ```
 
-If you don't, run the `run.py` script while the ESP32 is plugged in.
+If you aren't using an Apple computer/Macbook, run the `run.py` script while the ESP32 is plugged in.
 ```
-cd main/Python
+cd Python
 python run.py
 ```
 
@@ -59,5 +64,15 @@ Below: The web coffee ordering system
   <img src="https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32/assets/138086469/063af052-8572-46fd-9aae-6a818656e237" alt="Alt text">
 </div>
 
-# Extras
+# Debugging
+```
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/cu.usbserial-0001: [Errno 2] No such file or directory: '/dev/cu.usbserial-0001'
+```
+This bug comes from not having the EPS32 plugged in. Double check the ESP32 is plugged.
+
+```
+serial.serialutil.SerialException: [Errno 16] could not open port /dev/cu.usbserial-0001: [Errno 16] Resource busy: '/dev/cu.usbserial-0001'
+```
+This bug comes from having Arudino IDE or another prgram using the ESP32. Close whatever program is doing this.
+
 If you are having diffuculties, please email [matai@moorfield.co.nz](mailto:matai@moorfield.co.nz) and I'll be more than happy to help you out.
