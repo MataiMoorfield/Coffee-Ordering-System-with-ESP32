@@ -28,12 +28,12 @@ const char* password = "wifi_password";
 > [!IMPORTANT]
 > Don't run the Python script with the Arduino IDE open. The Python will ot be able to use the serial port as the Arduino IDE is using it. Close the serial monitor or quit Arduino IDE. Infomation about running the Python scrip is below.
 
-If you are using macOS, use ```python3```. If you are also using a Macbook/Apple computer, run the ```mac.py```. This allows the Python to talk as the orders come in. Before running the Python script, double check the ESP32 port is correctr (this can change from operating system). Use the Mac command ```ls /dev/cu.*```, Windows command ```wmic path Win32_PnPEntity where "Caption like '%(COM%'" get Caption,DeviceID```, or Linux command ```ls /dev/tty*```. It should look like ```/dev/cu.usbserial-0001```, ```COM3```, or ```/dev/ttyUSBx```.
+If you are using macOS, use ```python3``` to run the ```mac.py```. This allows the Python to talk as the orders come in. Before running the Python script, double check the ESP32 port is correct (this can change from operating system). Use the Mac command ```ls /dev/cu.*```, Windows command ```wmic path Win32_PnPEntity where "Caption like '%(COM%'" get Caption,DeviceID```, or Linux command ```ls /dev/tty*```. It should look like ```/dev/cu.usbserial-0001```, ```COM3```, or ```/dev/ttyUSBx```.
 
 How to run Mac python script:
 ```
 cd Python
-python mac.py
+python3 mac.py
 ```
 
 If you aren't using an Apple computer/Macbook, run the `run.py` script while the ESP32 is plugged in.
