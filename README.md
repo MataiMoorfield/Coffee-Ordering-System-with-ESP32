@@ -7,8 +7,9 @@ The ESP32 hosts a (local) basic user interface where a customer can fill out a f
 > Please note, ```mac.py``` runs on MacOS and might possibly run on other operating systems, however it's uncertain.
 
 # Setup
+The C++ code is uploaded to the ESP32. This code contains the form which allows users to customise their coffee order.
 
-Clone the folder using Git Clone: (or download it as a ZIP)
+To start, clone the folder using Git Clone: (or download it as a ZIP)
 ```
 git clone https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32.git
 cd Coffee-Ordering-System-with-ESP32/main
@@ -19,12 +20,23 @@ pip install -r requirements.txt
 ```
 **Note:** If you are using macOS, use ```pip3```.
 
-Update the WiFi information for your network in the ```main.ino``` code. Upload the code to the ESP32. View the serial monitor to make sure it's connected to WiFi and view the local IP of the ESP32. For example, 
+Update the WiFi information for your network in the ```main.ino``` code. Upload the code to the ESP32. 
 ```
 const char* ssid = "RouterName";
 const char* password = "wifi_password";
 ```
+
+View the serial monitor to make sure it's connected to WiFi. It will give the local IP of the ESP32. For example:
+```
+Connecting to WiFi...
+Connected to WiFi
+192.168.1.39
+```
+Enter the IP address to a search engine (Google Chrome, Safari, Firefox, etc.) and the order form will appear.
+
 # Running the Python script
+The Python script allows the barista/café owner to view the orders from the form in a graphic user interface.
+
 > [!IMPORTANT]
 > Don't run the Python script with the Arduino IDE open. The Python will ot be able to use the serial port as the Arduino IDE is using it. Close the serial monitor or quit Arduino IDE. Infomation about running the Python scrip is below.
 
