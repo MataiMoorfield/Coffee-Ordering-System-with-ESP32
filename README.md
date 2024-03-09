@@ -66,7 +66,7 @@ ESP32 hosts HTML → User sumbits form → Serial via USB → Python → GUI and
 # How to order:
 Enter the IP of the ESP32 in a web browser. A simple ordering form opens. When the form is completed and submitted, the order will appear on the Python GUI. When selected, the order can be completed and disappears.
 
-![Screenshot 2024-02-06 at 13 25 45](https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32/assets/138086469/8d18f029-6507-4e84-b749-aecffd2eb4bd)
+<img width="932" alt="Screenshot 2024-03-09 at 14 56 03" src="https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32/assets/138086469/fe8cd393-e466-4f03-9c06-627b4bd1f28a">
 
 Above: The Pyhton GUI
 
