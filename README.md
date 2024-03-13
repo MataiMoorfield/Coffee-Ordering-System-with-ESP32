@@ -6,7 +6,7 @@ The ESP32 hosts a (local) basic user interface where a customer can fill out a f
 
 ### Uses
  - Café ordering systems
- - Parties/weddings beverage systems 
+ - Parties/wedding beverage systems 
 
 > [!NOTE]
   > Please note, ```mac.py``` runs on MacOS and might possibly run on other operating systems, however it's uncertain. Use ```run.py``` instead.
