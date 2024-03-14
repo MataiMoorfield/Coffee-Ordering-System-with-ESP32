@@ -1,4 +1,4 @@
-# Coffee-Ordering-System-with-ESP32
+# Coffee Ordering System with ESP32
 A simple web based coffee (menu can be modified for any beverage) ordering system with the ESP32 for cafés, parties, or weddings. Full video [here](https://www.youtube.com/watch?v=jhMNulLlHCo). 
 
 ### How it works
