@@ -103,3 +103,6 @@ If you are having difficulties, please email [matai@moorfield.co.nz](mailto:mata
  - Making worldwide instead of local host 
  - Removing ESP32 and creating a server on a laptop
  - Barista menu for either the QR code, order form, and order handling 
+
+## Languages used
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
