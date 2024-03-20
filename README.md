@@ -17,7 +17,9 @@ The ESP32 hosts a local and basic user interface where a customer can fill out a
 # Setup
 The C++ code is uploaded to the ESP32. This code contains the form which allows users to customise their coffee order.
 
-To start, clone the folder using Git Clone: (or download it as a ZIP)
+First, download Python from the [offical Python website](https://www.python.org/)
+
+To start with the project, clone the folder using Git Clone: (or download it as a ZIP)
 ```
 git clone https://github.com/MataiMoorfield/Coffee-Ordering-System-with-ESP32.git
 cd Coffee-Ordering-System-with-ESP32/main
