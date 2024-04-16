@@ -102,6 +102,11 @@ line 11, in read_serial
     ser = serial.Serial('/dev/cu.usbserial-0001', 115200)
 AttributeError: module 'serial' has no attribute 'Serial'
 ```
+Make sure you have isntalled the serial module (using the ```requirements.txt``` file). If you already have, but are still getting this message, uninstall and reinstall the module using
+```
+pip install --upgrade --force-reinstall pyserial
+```
+(Use ```pip3``` for Mac etc.)
 
 If you are having difficulties, please email [matai@moorfield.co.nz](mailto:matai@moorfield.co.nz) and I'll be more than happy to help you out.
 
