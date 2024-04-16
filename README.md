@@ -97,6 +97,12 @@ serial.serialutil.SerialException: [Errno 16] could not open port /dev/cu.usbser
 ```
 This bug comes from having Arudino IDE or another prgram using the ESP32. Close whatever program is doing this.
 
+```
+line 11, in read_serial
+    ser = serial.Serial('/dev/cu.usbserial-0001', 115200)
+AttributeError: module 'serial' has no attribute 'Serial'
+```
+
 If you are having difficulties, please email [matai@moorfield.co.nz](mailto:matai@moorfield.co.nz) and I'll be more than happy to help you out.
 
 # Future updates
