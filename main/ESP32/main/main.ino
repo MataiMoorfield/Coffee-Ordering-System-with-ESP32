@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
 
-const char* ssid = "REPLACE_WITH_YOUR_SSID";
-const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+const char* ssid = "ORBI37";
+const char* password = "helpfulshrub878";
 
 AsyncWebServer server(80);
 
